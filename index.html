@@ -4,6 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- SEO Meta Tags — data science optimised -->
+        <meta name="description" content="Ushnik Nath — Data Scientist specialising in machine learning, NLP, time series analysis, and quantum-classical algorithms. Open to remote data science roles.">
+        <meta name="keywords" content="Data Scientist, Machine Learning, NLP, Python, Time Series, Remote Data Science, Quantum Machine Learning, AI, Deep Learning, Ushnik Nath">
+        <meta name="author" content="Ushnik Nath">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="Ushnik Nath — Data Scientist">
+        <meta property="og:description" content="Data Scientist with research experience across IIT Delhi, IIM Udaipur, University of Melbourne, and Tohoku University. Specialising in ML, NLP, and time series analysis.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://sputnik-42.github.io/">
+
         <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
@@ -26,10 +37,104 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
 
-        <!-- =====BOX ICONS===== -->
+        <!-- BOX ICONS -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        
-        <title>Ushnik Nath</title>
+
+        <title>Ushnik Nath — Data Scientist</title>
+
+        <!-- Inline enhancements: typed text animation + chip styles -->
+        <style>
+            /* ── Typing cursor ── */
+            .typed-cursor {
+                display: inline-block;
+                width: 3px;
+                background: currentColor;
+                margin-left: 3px;
+                animation: blink .75s step-end infinite;
+                vertical-align: text-bottom;
+                height: 1.1em;
+                border-radius: 1px;
+            }
+            @keyframes blink { 50% { opacity: 0; } }
+
+            /* ── Tech stack chips ── */
+            .chip-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: .5rem;
+                margin-top: 1.25rem;
+            }
+            .chip {
+                display: inline-flex;
+                align-items: center;
+                gap: .35rem;
+                padding: .28rem .75rem;
+                border-radius: 999px;
+                font-size: .78rem;
+                font-weight: 600;
+                letter-spacing: .02em;
+                border: 1.5px solid rgba(var(--accent-rgb, 29,161,242), .35);
+                background: rgba(var(--accent-rgb, 29,161,242), .07);
+                color: inherit;
+                transition: background .2s, border-color .2s;
+            }
+            .chip:hover {
+                background: rgba(var(--accent-rgb, 29,161,242), .18);
+                border-color: rgba(var(--accent-rgb, 29,161,242), .7);
+            }
+
+            /* ── Available badge ── */
+            .available-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: .45rem;
+                font-size: .8rem;
+                font-weight: 600;
+                letter-spacing: .04em;
+                text-transform: uppercase;
+                margin-bottom: .9rem;
+                padding: .3rem .85rem .3rem .6rem;
+                border-radius: 999px;
+                background: rgba(34,197,94,.12);
+                border: 1.5px solid rgba(34,197,94,.4);
+                color: #16a34a;
+            }
+            .available-badge .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #22c55e;
+                box-shadow: 0 0 0 3px rgba(34,197,94,.25);
+                animation: pulse 2s ease-in-out infinite;
+            }
+            @keyframes pulse {
+                0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,.25); }
+                50%       { box-shadow: 0 0 0 6px rgba(34,197,94,.08); }
+            }
+
+            /* ── Stats row ── */
+            .stats-row {
+                display: flex;
+                gap: 1.5rem;
+                margin-top: 1.4rem;
+                flex-wrap: wrap;
+            }
+            .stat-item {
+                display: flex;
+                flex-direction: column;
+                line-height: 1.2;
+            }
+            .stat-item strong {
+                font-size: 1.35rem;
+                font-weight: 800;
+            }
+            .stat-item span {
+                font-size: .72rem;
+                opacity: .65;
+                text-transform: uppercase;
+                letter-spacing: .06em;
+            }
+        </style>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -43,226 +148,373 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a target="_blank" href="https://medium.com/@ushniknath" class="nav__link">Blog</a></li>
-
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle" >
+                <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
         </header>
 
         <main class="l-main">
+
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
-                
+
                 <div class="home__data">
-                    <h1 class="home__title">Hi, I am <br> <span class="home__title-color">Ushnik Nath</span><br></h1>
-                    <p class="home__text">I'm a undergraduate student, studying Artificial Intelligence and Data Science 
-                        at the University School of Automation and Robotics, GGSIPU. <br>
-                        I love reading books and exploring new stuff. Right now I am learning and experimenting in the field of
-                        Quantum Computing </p>
+
+                    <!-- Open-to-work badge -->
+                    <div class="available-badge">
+                        <span class="dot"></span>
+                        Open to Roles
+                    </div>
+
+                    <h1 class="home__title">
+                        Hi, I am <br>
+                        <span class="home__title-color">Ushnik Nath</span><br>
+                    </h1>
+
+                    <!-- Typed role line -->
+                    <p class="home__text" style="font-weight:700; font-size:1.05rem; margin-bottom:.5rem;">
+                        <span id="typed-role">Data Scientist</span><span class="typed-cursor"></span>
+                    </p>
+
+                    <p class="home__text">
+                        I build machine learning models, NLP pipelines, and data-driven systems that turn messy,
+                        complex data into clear decisions. 
+                         <!-- Currently finishing my B.Tech in Artificial Intelligence
+                        &amp; Data Science at GGSIPU, with research experience at
+                        <strong>IIT Delhi</strong>, <strong>IIM Udaipur</strong>,
+                        <strong>University of Melbourne</strong>, and <strong>Tohoku University, Japan</strong>. -->
+                    </p>
+
+                    <!-- Tech stack chips -->
+                     <!--<div class="chip-row">
+                        <span class="chip"><i class='bx bxl-python' style="font-size:1em;"></i> Python</span>
+                        <span class="chip">scikit-learn</span>
+                        <span class="chip">pandas · NumPy</span>
+                        <span class="chip">NLP / NLTK</span>
+                        <span class="chip">Time Series</span>
+                        <span class="chip">SQL</span>
+                        <span class="chip">MATLAB</span>
+                    </div>  -->
+                                        <!-- Tech stack chips -->
+                    <div class="chip-row">
+                        <span class="chip"><i class='bx bxl-python' style="font-size:1em;"></i> Quantum</span>
+                        <span class="chip">Data Science</span>
+                        <span class="chip">Optimisation</span>
+                        <!-- <span class="chip">NLP / NLTK</span>
+                        <span class="chip">Time Series</span>
+                        <span class="chip">SQL</span>
+                        <span class="chip">MATLAB</span> -->
+                    </div>
+
+                    <!-- Quick stats -->
+                    <!--<div class="stats-row">
+                        <div class="stat-item">
+                            <strong>6+</strong>
+                            <span>Research Internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>4</strong>
+                            <span>Countries</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>GRE 331</strong>
+                            <span>Q:170 V:161</span>
+                        </div>
+                    </div>-->
+
                     <br><br>
                     <a href="#work" class="button">Projects</a>
-                    <a href="https://drive.google.com/file/d/1ORMEhgV1k1RzbFgPheyyTN20eW3ZAnfH/view?usp=sharing" target="_blank" " class="button">Resume</a>
+                    <a href="https://drive.google.com/file/d/1Wf4WrrMJLnFuP8osnykVETyk_cPeBSu2/view?usp=sharing"
+                       target="_blank" class="button">Resume</a>
                 </div>
 
-                <!-- <div class="home__social">
-                    <a href="https://www.linkedin.com/in/ushnik-nath-b93857251/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/u.n_discovered/" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://github.com/SPUTnik-42" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://discord.com/users/574607907203579906" class="home__social-icon"><i class='bx bxl-discord' ></i></a>
-                    <a href="https://open.spotify.com/user/99kfoomx4hsc3wylq3myy7m29?si=6327a3c1c4ab498e" class="home__social-icon"><i class='bx bxl-spotify' ></i></a>
-                </div> -->
-             <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                       <image class="home__blob-img" x="" y="" href="assets/img/a1.jpg"/>
-                        
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <image class="home__blob-img" x="" y="" href="assets/img/a1.jpg"/>
                     </svg>
                 </div>
 
-               
             </section>
-            
-            <!--===== ABOUT QUOTE =====-->
-            <section class="about-section " id="about">
-                <h2 class="section-title" >“Vidyādhanam sarvadhanāt pradhanam”</h2>
-                <p class="about__subtitle" style="font-weight: bolder;"><i>Knowledge is the greatest wealth</i></p>
+
+            <!--===== ABOUT / SHLOKA =====-->
+            <section class="about-section" id="about">
+                <h2 class="section-title">"Vidyādhanam sarvadhanāt pradhanam"</h2>
+                <p class="about__subtitle" style="font-weight:bolder;">
+                    <i>Knowledge is the greatest wealth</i>
+                </p>
                 <br>
-                <p  class="about__text"><i>~ Bhartrihari</i></p>
-                <div class="about__container bd-grid">
-                    
-                    <div>
+                <p class="about__text"><i>~ Bhartrihari</i></p>
 
+                <div class="about__container bd-grid">
+                    <div>
                         <p class="about__mean">
-                            Knowledge and the pursuit of it is a continuous process, never ending and ever changing. 
-                            I try to be open and look for opportunities to gain knowledge. Be it new ideas, projects, 
-                            hackathons.Feel free to reach out !</p>           
-                    </div>                                   
+                            Knowledge and the pursuit of it is a continuous process — never ending, ever changing.
+                            I try to stay curious and seek out opportunities to grow: new datasets, research problems,
+                            open-source projects, and collaborations across disciplines. Whether it's building an ML
+                            pipeline from scratch, digging into a messy dataset, or reading about a field I know
+                            nothing about yet, I'm always learning. Feel free to reach out!
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <!--===== SKILLS =====
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>-->
-
-            <!--===== WORK =====-->
+ <!--===== WORK / PROJECTS =====-->
+ 
+            <!-- Card tag + badge styles (scoped here so they don't touch other sections) -->
+            <style>
+                .card-meta {
+                    display: flex !important;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .4rem;
+                    margin-top: auto;
+                    padding: 0.5rem 0.5rem 0.75rem !important;
+                }
+                .card-tag {
+                    font-size: .68rem;
+                    font-weight: 700;
+                    letter-spacing: .05em;
+                    text-transform: uppercase;
+                    padding: .18rem .55rem;
+                    border-radius: 999px;
+                    border: 1.5px solid rgba(100,116,139,.3);
+                    background: rgba(100,116,139,.08);
+                    white-space: nowrap;
+                }
+                .card-tag--award {
+                    border-color: rgba(234,179,8,.5);
+                    background: rgba(234,179,8,.1);
+                    color: #a16207;
+                }
+                .card-date {
+                    font-size: .68rem;
+                    opacity: .5;
+                    margin-left: auto;
+                    white-space: nowrap;
+                }
+                .card-title {
+                    padding: .6rem 0.5rem 0;
+                    font-size: .95rem;
+                    line-height: 1.3;
+                    text-align: center;
+                    min-height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                /* Override padding set inline on old cards */
+                .work__img .card-title { padding-top: .6rem; }
+            </style>
+ 
             <section class="work section" id="work" style="padding-top: 0rem;">
-                <h2 class="section-title" ><u>Projects</u></h2>
-
+                <h2 class="section-title"><u>Research &amp; Projects</u></h2>
+ 
                 <div class="work__container bd-grid">
-                    <a href="pages/qintern.html" class="work__img" target="_blank" style="text-decoration: none" >
-                        <img src="assets/img/qworld_unib.png" alt="">
-                        <div style="padding-top: 4rem;padding-bottom: 0rem;">
-                            <h3 class="work_header">QIntern 2024</h3>
-                        </div>
-                       
-                    </a>
-                    
-                    <a href="pages/iiitd.html" class="work__img" target="_blank" style="text-decoration: none">
-                        <img src="assets/img/iiitd.png" alt="">
-                        <div style="padding-top: 4rem;padding-bottom: 0rem;">
-                            <h3 class="work_header">Research Intern at IIIT-Delhi</h3>
-                        </div>
-                    </a>
-                    <a href="pages/iimu.html" class="work__img" target="_blank" style="text-decoration: none">
-                        <img src="assets/img/iimu.jpg" alt="">
-                        <div style="padding-top: 4rem;padding-bottom: 0rem;">
-                            <h3 class="work_header">Summer / Data Science Intern at IIIM-U</h3>
+ 
+                    <!-- 1. Tohoku University — newest -->
+                    <a href="pages/tohoku.html" class="work__img" target="_blank" style="text-decoration:none;">
+                        <img src="assets/img/tohoku.png"
+                             alt="Quantum Optimisation Algorithms — Tohoku University, Japan"
+                             onerror="this.src='assets/img/ibmqiskit2024.png'">
+                        <h3 class="work_header card-title">
+                            Quantum Optimisation — Tohoku University, Japan
+                        </h3>
+                        <div class="card-meta">
+                            <span class="card-tag">Optimisation</span>
+                            <span class="card-tag">Quantum</span>
                         </div>
                     </a>
-                    <a href="pages/aiims.html" class="work__img" target="_blank" style="text-decoration: none">
-                        <img src="assets/img/aiims.svg" alt="" >
-                        <div style="padding-top: 2rem;padding-bottom: 0rem;">
-                            <h3 class="work_header" >Intern at AIIMS, New Delhi</h3>
+ 
+                    <!-- 2. VSAIQC Summer School -->
+                    <a href="pages/vsaiqc.html" class="work__img" target="_blank" style="text-decoration:none;">
+                        <img src="assets/img/vsaiqc.webp"
+                             alt="VSAIQC 2025 — AI & Quantum Computing Summer School, Vietnam"
+                             onerror="this.src='assets/img/ibmqiskit2024.png'">
+                        <h3 class="work_header card-title">
+                            VSAIQC 2025 — Vietnam
+                        </h3>
+                        <div class="card-meta">
+                            <span class="card-tag">Quantum</span>
+                            <span class="card-tag">Artificial Intelligence</span>
+                            <span class="card-tag">Summer School</span>
                         </div>
                     </a>
-                    <a href="pages/ibmqiskit.html" class="work__img" target="_blank" style="text-decoration: none">
-                        <img src="assets/img/ibmqiskit2024.png" alt="">
-                        <div style="padding-top: 4rem;padding-bottom: 0rem;">
-                            <h3 class="work_header">IBM Qiskit Summer Schools</h3>
+ 
+                    <!-- 3. IIT Delhi — QKD Simulator -->
+                    <a href="pages/iitd.html" class="work__img" target="_blank" style="text-decoration:none;">
+                        <img src="assets/img/iitd.png"
+                             alt="QKD Protocol Simulator — IIT Delhi"
+                             onerror="this.src='assets/img/iiitd.png'">
+                        <h3 class="work_header card-title">
+                            QKD Protocol Simulator &amp; Data Visualisation — IIT Delhi
+                        </h3>
+                        <div class="card-meta">
+                            <span class="card-tag">Data Visualisation</span>
+                            <span class="card-tag">Quantum</span>
                         </div>
                     </a>
-                    <a href="pages/p6.html" class="work__img" target="_blank" style="text-decoration: none">
-                        <img src="assets/img/p_6.jpg" alt="">
-                        <div style="padding-top: 4rem;padding-bottom: 0rem;">
-                            <h3 class="work_header">E.O.T.O: Each One Teach One (Social Service)</h3>
+ 
+                    <!-- 4. QIntern 2024 — University of Melbourne -->
+                    <a href="pages/qintern.html" class="work__img" target="_blank" style="text-decoration:none;">
+                        <img src="assets/img/qworld_unib.png"
+                             alt="QIntern 2024 — Cloud Simulation & Scheduling, University of Melbourne">
+                        <h3 class="work_header card-title">
+                            QSimpy — Univ. of Melbourne
+                        </h3>
+                        <div class="card-meta">
+                            <span class="card-tag">Optimisation</span>
+                            <span class="card-tag">Quantum</span>
+                            <span class="card-tag card-tag--award">🏆 3rd Best Project</span>
                         </div>
                     </a>
-
-                    
+ 
+                    <!-- 5. IIIT Delhi — ML / Time Series -->
+                    <a href="pages/iiitd.html" class="work__img" target="_blank" style="text-decoration:none;">
+                        <img src="assets/img/iiitd.png"
+                             alt="Quantum LSTM & Time Series Forecasting — IIIT Delhi">
+                        <h3 class="work_header card-title">
+                            LSTM &amp; Time Series Forecasting — IIIT Delhi
+                        </h3>
+                        <div class="card-meta">
+                            <span class="card-tag">Machine Learning</span>
+                            <span class="card-tag">Time Series</span>
+                            <span class="card-tag">Quantum</span>
+                        </div>
+                    </a>
+ 
+                    <!-- 6. IIM Udaipur — NLP & Statistical Analysis -->
+                    <a href="pages/iimu.html" class="work__img" target="_blank" style="text-decoration:none;">
+                        <img src="assets/img/iimu.jpg"
+                             alt="NLP & Statistical Analysis on 1500+ Companies — IIM Udaipur">
+                        <h3 class="work_header card-title">
+                            NLP &amp; Statistical Analysis — IIM Udaipur
+                        </h3>
+                        <div class="card-meta">
+                            <span class="card-tag">NLP</span>
+                            <span class="card-tag">Sentiment Analysis</span>
+                            <span class="card-tag">STATA</span>
+                        </div>
+                    </a>
+ 
+                    <!-- 7. AIIMS — Healthcare Data Systems -->
+                    <a href="pages/aiims.html" class="work__img" target="_blank" style="text-decoration:none;">
+                        <img src="assets/img/aiims.svg"
+                             alt="Healthcare Data Systems — AIIMS New Delhi">
+                        <h3 class="work_header card-title">
+                            Healthcare Data Systems — AIIMS, New Delhi
+                        </h3>
+                        <div class="card-meta">
+                            <span class="card-tag">Data Systems</span>
+                            <span class="card-tag">Dashboards</span>
+                        </div>
+                    </a>
+ 
                 </div>
-
-                <div class="work__img" style="box-shadow: none; display: flex; align-items: center; justify-content: center; padding-top: 6rem;"> <a href="pages/projects.html" class="button"> More Projects</a> </div>
-               
+ 
+                <div class="work__img" style="box-shadow:none; display:flex; align-items:center; justify-content:center; padding-top:1rem;">
+                    <a href="pages/projects.html" class="button">More Projects</a>
+                </div>
+ 
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact-section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
-                <!--<div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>-->
-                <div class="contact-text" style="padding-bottom: 5%;">
+                <div class="contact-text" style="padding-bottom:5%;">
                     <p>
-                    The best way to reach me is to email me at <a href="mailto:ushniknath@gmail.com">ushniknath@gmail.com</a>.
-                    I will try to respond within hours of receiving the message. 
-                    Or you could find me on social media. I have an active account on Instagram and linkedin.
+                        I'm actively looking for <strong>job opportunities</strong> and always
+                        happy to talk about ML, research, or interesting datasets. The best way to reach me is
+                        <a href="mailto:ushniknath@gmail.com">ushniknath@gmail.com</a> — I typically respond
+                        within a few hours. You can also find me on LinkedIn or GitHub.
                     </p>
-                    <div class="contact__social" >
+                    <div class="contact__social">
                         <center>
-                            <a target="_blank" href="https://www.linkedin.com/in/ushnik-nath-b93857251/" class="home__social-icon"><i style="font-size:2em;" class='bx bxl-linkedin'></i></a>
-                            <a target="_blank" href="https://www.instagram.com/u.n_discovered/" class="home__social-icon"><i style="font-size:2em;" class='bx bxl-instagram' ></i></a>
-                            <a target="_blank" href="https://github.com/SPUTnik-42" class="home__social-icon"><i style="font-size:2em;" class='bx bxl-github' ></i></a>
-                            <a target="_blank" href="https://discord.com/users/574607907203579906" class="home__social-icon"><i style="font-size:2em;" class='bx bxl-discord' ></i></a>
-                            <a target="_blank" href="https://open.spotify.com/user/99kfoomx4hsc3wylq3myy7m29?si=6327a3c1c4ab498e" class="home__social-icon"><i style="font-size:2em;" class='bx bxl-spotify' ></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/ushnik-nath-b93857251/"
+                               class="home__social-icon" aria-label="LinkedIn">
+                                <i style="font-size:2em;" class='bx bxl-linkedin'></i>
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/u.n_discovered/"
+                               class="home__social-icon" aria-label="Instagram">
+                                <i style="font-size:2em;" class='bx bxl-instagram'></i>
+                            </a>
+                            <a target="_blank" href="https://github.com/SPUTnik-42"
+                               class="home__social-icon" aria-label="GitHub">
+                                <i style="font-size:2em;" class='bx bxl-github'></i>
+                            </a>
+                            <a target="_blank" href="https://discord.com/users/574607907203579906"
+                               class="home__social-icon" aria-label="Discord">
+                                <i style="font-size:2em;" class='bx bxl-discord'></i>
+                            </a>
+                            <a target="_blank" href="https://open.spotify.com/user/99kfoomx4hsc3wylq3myy7m29?si=6327a3c1c4ab498e"
+                               class="home__social-icon" aria-label="Spotify">
+                                <i style="font-size:2em;" class='bx bxl-spotify'></i>
+                            </a>
                         </center>
                     </div>
                 </div>
-
-
             </section>
+
         </main>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="">Made with <span style="font-size:100%;color:red;">&hearts;</span> by Ushnik Nath. </p>
-            <p class="footer__copy"><a href="https://github.com/bedimcode/portfolio-responsive-complete"  style="text-decoration: none;color: #f5f5f5; font-size: xx-small;">Inspiration from Bedimcode</a></p>
+            <p>Made with <span style="font-size:100%;color:red;">&hearts;</span> by Ushnik Nath.</p>
+            <p class="footer__copy">
+                <a href="https://github.com/bedimcode/portfolio-responsive-complete"
+                   style="text-decoration:none;color:#f5f5f5;font-size:xx-small;">
+                    Inspiration from Bedimcode
+                </a>
+            </p>
         </footer>
 
-
-        <!--===== SCROLL REVEAL =====-->
+        <!-- SCROLL REVEAL -->
         <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
+        <!-- MAIN JS -->
         <script src="assets/js/main.js"></script>
+
+        <!-- Typing animation for roles -->
+        <script>
+            (function () {
+                const roles = [
+                    "Data Scientist",
+                    "Quantum Researcher"
+                ];
+                const el = document.getElementById("typed-role");
+                if (!el) return;
+
+                let rIdx = 0, cIdx = 0, deleting = false;
+                const TYPING_SPEED = 80, DELETE_SPEED = 45, PAUSE = 1800;
+
+                function tick() {
+                    const current = roles[rIdx];
+                    if (!deleting) {
+                        el.textContent = current.slice(0, ++cIdx);
+                        if (cIdx === current.length) {
+                            deleting = true;
+                            setTimeout(tick, PAUSE);
+                            return;
+                        }
+                    } else {
+                        el.textContent = current.slice(0, --cIdx);
+                        if (cIdx === 0) {
+                            deleting = false;
+                            rIdx = (rIdx + 1) % roles.length;
+                        }
+                    }
+                    setTimeout(tick, deleting ? DELETE_SPEED : TYPING_SPEED);
+                }
+                tick();
+            })();
+        </script>
     </body>
 </html>
